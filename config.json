@@ -1,0 +1,18 @@
+{
+  "strategies": [
+    {
+      "name": "EMA_2ATR",
+      "enabled": true,
+      "description": "一个基于EMA均线和ATR通道的趋势跟踪策略。",
+      "ui_module": "gui.ema_2_atr_ui",
+      "ui_class": "EmaAtrUI",
+      "logic_module": "strategy.ema_2_atr",
+      "single_run_func": "run_single_backtest",
+      "batch_run_func": "run_batch_backtest"
+    }
+  ],
+  "app_settings": {
+    "default_theme": "litera",
+    "results_directory": "result"
+  }
+}

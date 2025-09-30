@@ -1,0 +1,5 @@
+ttkbootstrap
+pandas
+numpy
+backtesting
+matplotlib
