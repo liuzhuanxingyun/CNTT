@@ -161,8 +161,12 @@ class MainApp:
                         files.append(name)
             files.sort()
             self.csv_combo['values'] = files
+            
+            default_file = 'btc_usdt_24-至今'
             if selected and selected in files:
                 self.csv_var.set(selected)
+            elif default_file in files:
+                self.csv_var.set(default_file)
             elif files:
                 self.csv_var.set(files[0])
         except Exception as e:
